@@ -25,29 +25,14 @@ $censored_paragraph_length = strlen($censored_paragraph);
 
     <!-- TITLE -->
     <title>Document</title>
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- VUE JS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-    <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="./js/app.js" defer></script>
 </head>
 
 <body>
+    <!-- Stampo paragrafo originale e la sua lunghezza -->
+    <p> <?= echo $paragraph ?> <strong> <?= echo $paragraph_length ?></strong></p>
 
-    
-
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <!-- Stampo paragrafo censurato e la sua lunghezza -->
+    <p> <?= echo $censored_paragraph ?> <strong> <?= echo $censored_paragraph_length ?></strong></p>
 </body>
 
 </html>
